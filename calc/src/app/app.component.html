@@ -1,0 +1,54 @@
+<html>
+<body bgcolor="#1e3d59">
+  <br>
+  <br>
+  <div class="title">
+    <h1>Angular Calculator Application</h1>
+  </div>
+  <br>
+
+  <div class="main">
+    <h1 align="center">Simple Calculator</h1>
+    <div class="calculator">
+
+      <div class="maindisplay">
+        <div class="subdisplay">
+          {{ subText }}
+        </div>
+        {{ mainText }}
+      </div>
+
+      <div class="calculator-keys">
+
+        <button type="button" class="operator" (click)="pressKey('+')">+</button>
+        <button type="button" class="operator" (click)="pressKey('-')">-</button>
+        <button type="button" class="operator" (click)="pressKey('x')">x</button>
+        <button type="button" class="operator" (click)="pressKey('/')">/</button>
+
+        <button type="button" (click)="pressKey('7')">7</button>
+        <button type="button" (click)="pressKey('8')">8</button>
+        <button type="button" (click)="pressKey('9')">9</button>
+        <button type="button" class="clr-sign" (click)="clearKey()">CLR</button>
+
+        <button type="button" (click)="pressKey('4')">4</button>
+        <button type="button" (click)="pressKey('5')">5</button>
+        <button type="button" (click)="pressKey('6')">6</button>
+
+        <button type="button" (click)="pressKey('1')">1</button>
+        <button type="button" (click)="pressKey('2')">2</button>
+        <button type="button" (click)="pressKey('3')">3</button>
+
+        <button type="button" class="decimal" (click)="pressKey('.')">.</button>
+        <button type="button" (click)="pressKey('0')">0</button>
+        <button type="button" class="all-clear" (click)="allClear()">AC</button>
+
+        <button type="button" class="equal-sign" (click)="getAnswer()">=</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+ 
+</body>
+</html>
